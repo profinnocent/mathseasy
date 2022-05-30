@@ -10,3 +10,7 @@
 .loginpage img{
     width: 70px;
 }
+
+.loginpage a{
+    text-decoration: none;
+}

@@ -7,7 +7,7 @@ export class Button extends Component {
     constructor(props){
         super(props);
         this.state = {
-            typez: props.typez,
+            claxx: props.claxx,
             text: props.text
         }
     }
@@ -15,7 +15,7 @@ export class Button extends Component {
   render() {
     return (
       <div>
-        <button className={this.state.typez}>{this.state.text}</button>
+        <button className={this.state.claxx}>{this.state.text}</button>
       </div>
     );
   }
