@@ -19,35 +19,35 @@ function Register() {
         <Input
           typez="text"
           claxx=" regfirstname w3-input w3-round w3-margin-bottom"
-          placeholder="Enter First Name"
+          placeholder="Firstname"
         />
 
         <Input
           typez="text"
           claxx=" reglastname w3-input w3-round w3-margin-bottom"
-          placeholder="Enter Last name"
+          placeholder="Lastname"
         />
 
         <Input
           typez="text"
           claxx=" regusername w3-input w3-round w3-margin-bottom"
-          placeholder="Enter Username"
+          placeholder="Username"
         />
         <Input
           claxx="regemail w3-input w3-round w3-margin-bottom"
           typez="email"
-          placeholder="Enter Email"
+          placeholder="Email"
         />
 
         <Input
           claxx="regphoneno w3-input w3-round w3-margin-bottom"
           typez="number"
-          placeholder="Enter Phone No"
+          placeholder="Phone No"
         />
         <Input
           typez="password"
           claxx="regpassword w3-input w3-round w3-margin-bottom"
-          placeholder="Enter Password"
+          placeholder="Password"
         />
         <Input
           typez="password"
@@ -60,7 +60,7 @@ function Register() {
         />
 
         <Link to="/" className="w3-block w3-right-align">
-          Back
+        &#9756;Back
         </Link>
       </form>
     </div>

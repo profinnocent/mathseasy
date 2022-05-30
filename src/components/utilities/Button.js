@@ -8,14 +8,15 @@ export class Button extends Component {
         super(props);
         this.state = {
             claxx: props.claxx,
-            text: props.text
+            text: props.text,
+            typez: props.typez
         }
     }
    // alert(this.state.typez);
   render() {
     return (
       <div>
-        <button className={this.state.claxx}>{this.state.text}</button>
+        <button type={this.state.typez} className={this.state.claxx}>{this.state.text}</button>
       </div>
     );
   }

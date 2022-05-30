@@ -5,9 +5,14 @@ import "./Login.css";
 import Input from "./utilities/Input";
 
 function Login() {
+  const handleLogin = (e) => {
+    e.preventDefault();
+    alert('Login');
+  }
+
   return (
     <div className="loginpage w3-container">
-      <form>
+      <form onSubmit={handleLogin}>
         <img
           src="https://cdn-icons-png.flaticon.com/128/3771/3771278.png"
           alt="Logo"
@@ -20,18 +25,19 @@ function Login() {
         <Input
           claxx="lipusername w3-input w3-round w3-margin-bottom"
           typez="text"
-          placeholder="Enter Username"
+          placeholder="Username"
         />
 
         <Input
           claxx="lippassword w3-input w3-round w3-margin-bottom"
           typez="password"
-          placeholder="Enter Password"
+          placeholder="Password"
         />
 
         <Button
           text="Login"
           claxx="w3-button w3-theme w3-round-large w3-block w3-margin-bottom"
+          typez="submit"
         />
 
         <Link
