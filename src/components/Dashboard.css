@@ -1,0 +1,16 @@
+.dashboard{
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.dashboard img{
+    width: 70px;
+}
+
+.dashboard a{
+    text-decoration: none;
+}

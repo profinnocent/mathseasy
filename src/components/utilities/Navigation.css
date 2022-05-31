@@ -1,0 +1,16 @@
+.navigation{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 25%;
+    height: 100vh;
+}
+
+.navigation img{
+    width: 30px;
+}
+
+.navigation ul{
+    list-style: none;
+}
