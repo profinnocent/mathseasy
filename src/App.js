@@ -15,7 +15,7 @@ function App() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    alert('Login button clciked' + username);
+    // alert('Login button clciked' + username);
 
     if(username === ""){
       alert('Please enter user details');
