@@ -9,14 +9,22 @@ export class Button extends Component {
         this.state = {
             claxx: props.claxx,
             text: props.text,
-            typez: props.typez
+            typez: props.typez,
+            onSubmit: props.onSubmit
         }
     }
-   // alert(this.state.typez);
+
+     // alert(this.state.typez);
   render() {
     return (
       <div>
-        <button type={this.state.typez} className={this.state.claxx}>{this.state.text}</button>
+        <button 
+        type={this.state.typez} 
+        className={this.state.claxx}
+        onSubmit={this.state.onSubmit}
+        >
+          {this.state.text}
+        </button>
       </div>
     );
   }

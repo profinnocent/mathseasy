@@ -3,11 +3,11 @@ import './Dashboard.css'
 import Maindash from './Maindash';
 import Navigation from './utilities/Navigation';
 
-const Dashboard = (props) => {
+const Dashboard = ({username}) => {
 
   return (
     <div className='dashboard'>
-      <Navigation username={props.username}/>
+      <Navigation username={username}/>
       <Maindash />
     </div>
   )

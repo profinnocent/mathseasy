@@ -6,7 +6,9 @@ export class Input extends Component {
         this.state = {
             claxx: props.claxx,
             typez: props.typez,
-            placeholder: props.placeholder
+            placeholder: props.placeholder,
+            onChange: props.onChange,
+            username: props.username
         }
     }
   render() {
@@ -16,6 +18,8 @@ export class Input extends Component {
         type={this.state.typez} 
         className={this.state.claxx} 
         placeholder={this.state.placeholder}
+        onChange={this.state.onChange}
+        value={this.state.username}
         />
       </div>
     );
