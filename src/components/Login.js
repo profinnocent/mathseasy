@@ -3,7 +3,7 @@ import Button from "./utilities/Button";
 import "./Login.css";
 import Input from "./utilities/Input";
 
-function Login({username, getUsername, handleLogin}) {
+function Login({username, password, getUsername,getPassowrd, handleLogin}) {
   
 
   return (
@@ -30,8 +30,8 @@ function Login({username, getUsername, handleLogin}) {
           claxx="lippassword w3-input w3-round w3-margin-bottom"
           typez="password"
           placeholder="Password"
-          // onChange={e => setPassword(e.target.value)}
-          // value={password}
+          onChange={e => getPassowrd(e)}
+          value={password}
         />
 
         <Button

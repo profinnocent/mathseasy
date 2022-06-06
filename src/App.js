@@ -41,7 +41,7 @@ function App() {
     <div className="App w3-theme-l4">
       <Router>
         <Routes>
-          <Route path="/" element={<Login username={username} getUsername={e => getUsername(e)} getPassword={getPassword} handleLogin={handleLogin} />} />
+          <Route path="/" element={<Login username={username} password={password} getUsername={e => getUsername(e)} getPassword={getPassword} handleLogin={handleLogin} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/reset" element={<Reset />} />
           <Route path="/dashboard" element={<Dashboard username={username}/>} />
