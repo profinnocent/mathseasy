@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./utilities/Button";
 import "./Login.css";
 import Input from "./utilities/Input";
 
 function Login() {
+  const [username, setUsername] = useState("prof");
+  const [password, setPassword] = useState("")
+
+
   const handleLogin = (e) => {
     e.preventDefault();
-    alert('Login');
+    alert('Login button clciked' + username);
+
+    if(username === ""){
+      alert('Please enter user details');
+    }else{
+      alert('Welcome, you have successfully loggd in')
+      window.location = window.location.href + "./dashboard";
+    }
+  }
+
+  const getUsername = (e) => {
+    setUsername(e.target.value);
+    alert(username);
   }
 
   return (
@@ -26,12 +42,16 @@ function Login() {
           claxx="lipusername w3-input w3-round w3-margin-bottom"
           typez="text"
           placeholder="Username"
+          onChange={getUsername}
+          value={username}
         />
 
         <Input
           claxx="lippassword w3-input w3-round w3-margin-bottom"
           typez="password"
           placeholder="Password"
+          onChange={e => setPassword(e.target.value)}
+          value={password}
         />
 
         <Button
