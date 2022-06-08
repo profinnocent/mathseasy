@@ -5,6 +5,7 @@ import Reset from './components/Reset';
 import Register from './components/Register';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Dashboard from './components/Dashboard';
+//import NavHook from './components/utilities/NavHook';
 
 
 
@@ -20,8 +21,10 @@ function App() {
     if(username === ""){
       alert('Please enter user details');
     }else{
-      alert('Welcome, you have successfully loggd in')
-      window.location = window.location.href + "./dashboard";
+      alert('Welcome, you have successfully loggd in');
+     window.location = window.location.href + "/dashboard";
+     //<NavHook url="/dashboard"/>
+
     }
   }
 

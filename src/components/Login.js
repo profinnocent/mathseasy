@@ -42,7 +42,7 @@ function Login({username, password, getUsername,getPassowrd, handleLogin}) {
         />
 
         <Link
-          to="/register"
+          to={username !== "" ? "/register" : "/reset"}
           className="w3-button w3-theme-d4 w3-round-large w3-block w3-margin-bottom"
         >
           Register
