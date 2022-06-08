@@ -21,7 +21,7 @@ function App() {
       alert('Please enter user details');
     }else{
       alert('Welcome, you have successfully loggd in')
-      window.location = window.location.href + "./dashboard";
+      window.location = window.location.href + "/dashboard";
     }
   }
 
