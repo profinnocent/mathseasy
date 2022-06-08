@@ -21,10 +21,8 @@ function App() {
     if(username === ""){
       alert('Please enter user details');
     }else{
-      alert('Welcome, you have successfully loggd in');
-     window.location = window.location.href + "/dashboard";
-     //<NavHook url="/dashboard"/>
-
+      alert('Welcome, you have successfully loggd in')
+      window.location = window.location.href + "dashboard";
     }
   }
 
